@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zk.elasticsearchlog.db.dao.RetailB2cOrderDao">
+    <resultMap id="result" type="RetailB2cOrderDo">
+        <result column="order_id" property="order_id"/>
+        <result column="order_code" property="order_code"/>
+        <result column="out_code" property="out_code"/>
+        <result column="order_status" property="order_status"/>
+        <result column="seller_shop_code" property="seller_shop_code"/>
+        <result column="seller_shop_name" property="seller_shop_name"/>
+        <result column="seller_shop_address" property="seller_shop_address"/>
+        <result column="operator_id" property="operator_id"/>
+        <result column="operator_name" property="operator_name"/>
+        <result column="goods_spu_id" property="goods_spu_id"/>
+        <result column="goods_sku_id" property="goods_sku_id"/>
+        <result column="model_code" property="model_code"/>
+        <result column="model_name" property="model_name"/>
+        <result column="earnest" property="earnest"/>
+        <result column="already_paid" property="already_paid"/>
+        <result column="retainage" property="retainage"/>
+        <result column="downPayment" property="downPayment"/>
+        <result column="retainage_already_pay" property="retainage_already_pay"/>
+        <result column="retrofit_price" property="retrofit_price"/>
+        <result column="naked_car_price" property="naked_car_price"/>
+        <result column="mortgage_periods" property="mortgage_periods"/>
+        <result column="mortgage_money" property="mortgage_money"/>
+        <result column="mortgage_method" property="mortgage_method"/>
+        <result column="pay_method" property="pay_method"/>
+        <result column="deal_price" property="deal_price"/>
+        <result column="make_get_car_date" property="make_get_car_date"/>
+        <result column="buyer_earnest_expiry_date" property="buyer_earnest_expiry_date"/>
+        <result column="buyer_earnest_pay_date" property="buyer_earnest_pay_date"/>
+        <result column="retainage_pay_date" property="retainage_pay_date"/>
+        <result column="sales_id" property="sales_id"/>
+        <result column="sales_name" property="sales_name"/>
+        <result column="sales_phone" property="sales_phone"/>
+        <result column="is_sync" property="is_sync"/>
+        <result column="buyer_type" property="buyer_type"/>
+        <result column="customer_id" property="customer_id"/>
+        <result column="payer_id" property="payer_id"/>
+        <result column="payer_name" property="payer_name"/>
+        <result column="payer_phone" property="payer_phone"/>
+        <result column="payer_identity" property="payer_identity"/>
+        <result column="plate_user_id" property="plate_user_id"/>
+        <result column="plate_user_type" property="plate_user_type"/>
+        <result column="plate_user_name" property="plate_user_name"/>
+        <result column="plate_user_phone" property="plate_user_phone"/>
+        <result column="plate_user_identity" property="plate_user_identity"/>
+        <result column="plate_company_social_unicode" property="plate_company_social_unicode"/>
+        <result column="plate_company_name" property="plate_company_name"/>
+        <result column="plate_company_contact_user" property="plate_company_contact_user"/>
+        <result column="plate_company_contact_phone" property="plate_company_contact_phone"/>
+        <result column="plate_province_code" property="plate_province_code"/>
+        <result column="plate_province_name" property="plate_province_name"/>
+        <result column="plate_city_code" property="plate_city_code"/>
+        <result column="plate_city_name" property="plate_city_name"/>
+        <result column="client_type_code" property="client_type_code"/>
+        <result column="client_province_code" property="client_province_code"/>
+        <result column="client_province_name" property="client_province_name"/>
+        <result column="client_city_code" property="client_city_code"/>
+        <result column="client_city_name" property="client_city_name"/>
+        <result column="client_district_code" property="client_district_code"/>
+        <result column="client_district_name" property="client_district_name"/>
+        <result column="client_address" property="client_address"/>
+        <result column="carry_car_date" property="carry_car_date"/>
+        <result column="identity_frontage" property="identity_frontage"/>
+        <result column="identity_frontage_upload_date" property="identity_frontage_upload_date"/>
+        <result column="identity_opposite" property="identity_opposite"/>
+        <result column="identity_opposite_upload_date" property="identity_opposite_upload_date"/>
+        <result column="store_receipt" property="store_receipt"/>
+        <result column="store_receipt_upload_date" property="store_receipt_upload_date"/>
+        <result column="purchase_tax_certificate" property="purchase_tax_certificate"/>
+        <result column="purchase_tax_certificate_upload_date" property="purchase_tax_certificate_upload_date"/>
+        <result column="driving_license" property="driving_license"/>
+        <result column="driving_license_upload_date" property="driving_license_upload_date"/>
+        <result column="car_register_certificate" property="car_register_certificate"/>
+        <result column="car_register_certificate_upload_date" property="car_register_certificate_upload_date"/>
+        <result column="business_license" property="business_license"/>
+        <result column="business_license_upload_date" property="business_license_upload_date"/>
+        <result column="rights_obligations_transfer_aggrement" property="rights_obligations_transfer_aggrement"/>
+        <result column="rights_obligations_transfer_aggrement_upload_date"
+                property="rights_obligations_transfer_aggrement_upload_date"/>
+        <result column="make_invoice_date" property="make_invoice_date"/>
+        <result column="alipay_scan_user" property="alipay_scan_user"/>
+        <result column="supplementary_provisions" property="supplementary_provisions"/>
+        <result column="vin_number" property="vin_number"/>
+        <result column="remark" property="remark"/>
+        <result column="manufactor_id" property="manufactor_id"/>
+        <result column="voucher_price" property="voucher_price"/>
+        <result column="ma_code" property="ma_code"/>
+        <result column="tmall_source_order" property="tmall_source_order"/>
+        <result column="tmall_scan_user" property="tmall_scan_user"/>
+        <result column="order_source" property="order_source"/>
+        <result column="seller_site_id" property="seller_site_id"/>
+        <result column="date_create" property="date_create"/>
+        <result column="date_update" property="date_update"/>
+        <result column="deleted" property="deleted"/>
+        <result column="test_flag" property="test_flag"/>
+        <result column="used_car_exchange" property="used_car_exchange"/>
+        <result column="nature" property="nature"/>
+        <result column="car_usage" property="car_usage"/>
+        <result column="oushang_paied_earnest" property="oushang_paied_earnest"/>
+        <result column="order_audit_status" property="order_audit_status"/>
+        <result column="contract_audit_status" property="contract_audit_status"/>
+        <result column="finance_audit_status" property="finance_audit_status"/>
+        <result column="funding_plan" property="funding_plan"/>
+        <result column="retainage_pay_offline" property="retainage_pay_offline"/>
+        <result column="sap_fail_msg" property="sap_fail_msg"/>
+        <result column="huitong_apply_label" property="huitong_apply_label"/>
+        <result column="group_id" property="group_id"/>
+        <result column="plate_user_credentials_type" property="plate_user_credentials_type"/>
+        <result column="retail_order_type" property="retail_order_type"/>
+        <result column="flagship_store_id" property="flagship_store_id"/>
+        <result column="flagship_store_name" property="flagship_store_name"/>
+        <result column="pickup_at" property="pickup_at"/>
+        <result column="business_model" property="business_model"/>
+        <result column="down_payment_ratio" property="down_payment_ratio"/>
+        <result column="loan_method" property="loan_method"/>
+        <result column="pangolin" property="pangolin"/>
+        <result column="increased_type" property="increased_type"/>
+        <result column="increased_price" property="increased_price"/>
+        <result column="sales_type" property="sales_type"/>
+    </resultMap>
+
+    <select id="getAll" resultMap="result">
+        SELECT * FROM retail_b2c_order LIMIT #{offset}, #{limit}
+    </select>
+</mapper>
+
+
+
