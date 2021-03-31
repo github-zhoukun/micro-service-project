@@ -163,7 +163,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>27.1-jre</version>
+            <version>29.0-jre</version>
         </dependency>
         <!--国内大神写的开源工具包-->
         <dependency>
